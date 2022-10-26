@@ -32,10 +32,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.13.x
-          cache: npm
+          cache: ~/.npm
 # Error: Dependencies lock file is not found in /home/runner/work/Link-Checker/Link-Checker. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock
       - name: Install
-        run: npm ci
+        run: ~/.npm ci
 
       # Creates file "$/files.json", among others
       - name: Gather files changed
