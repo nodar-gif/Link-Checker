@@ -36,6 +36,8 @@ jobs:
 
       - name: Install
         run: ~/.npm ci
+# /home/runner/work/_temp/be3602f0-fec1-4f72-b6b7-97416d9fdc91.sh: line 1: /home/runner/.npm: No such file or directory
+# Error: Process completed with exit code 127.
 
       # Creates file "$/files.json", among others
       - name: Gather files changed
